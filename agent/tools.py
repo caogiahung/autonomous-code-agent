@@ -54,3 +54,7 @@ def summarize_issue(issue: dict) -> str:
         f"Labels: {', '.join(issue['labels']) or 'none'}\n"
         f"Description:\n{issue['body'][:1000]}"
     )
+
+def format_patch(filepath: str, code: str) -> str:
+    """Format a patch summary for PR description."""
+    return f"**File changed:** `{filepath}`\n\n```python\n{code[:500]}\n```"

@@ -60,3 +60,7 @@ python main.py
 
 \- PyGithub
 
+## Roadmap
+- [ ] Auto-assign issues to agent
+- [ ] Slack notification on PR created
+- [ ] Support for multi-file patches
